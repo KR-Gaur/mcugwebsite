@@ -6,23 +6,6 @@
 -->
 <html>
 	<head>
-		<style type="text/css">
-			.video-container {
-			  position:relative;
-			  padding-bottom:56.25%;
-			  padding-top:30px;
-			  height:0;
-			  overflow:hidden;
-			}
-
-			.video-container iframe, .video-container object, .video-container embed {
-			  position:absolute;
-			  top:0;
-			  left:0;
-			  width:100%;
-			  height:100%;
-			}
-		</style>
 		<title>Linuxication</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
@@ -34,20 +17,21 @@
 		<script src="js/init.js"></script>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
-  		<link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<noscript>
 			<link rel="stylesheet" href="css/skel.css" />
 			<link rel="stylesheet" href="css/style.css" />
 			<link rel="stylesheet" href="css/style-xlarge.css" />
+		</noscript>
 	</head>
 	<body id="top">
 
 		<!-- Header -->
-			<header id="header" class="skel-layers-fixed" style="background: rgba(0,0,0,0.8);">
-				<h1><a href="index.html"><img src="images/logo.png" style="height: 100%;width: 5%;"><font style="font-size: 20px;position: absolute;top: 5px;color: white;">MIT COMPUTER USERS' GROUP</font></a></h1>
+			<header id="header" class="skel-layers-fixed">
+				<h1><a href="index.html">MCUG</a></h1>
 				<nav id="nav">
 					<ul>
-						<li><a href="index.html" style="color: white;">Home</a></li>
+						<li><a href="index.html">Home</a></li>
 						<li>
 							<div class="dropdown">
 								<button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown" style="border: none !important;">Events
@@ -58,9 +42,9 @@
 							  </ul>
 							</div>
 						</li>
-						<li><a href="right-sidebar.html" style="color: white;">Newsletter</a></li>
-						<li><a href="no-sidebar.html" style="color: white;">About Us</a></li>
-						<li><a href="#" class="button special">Register</a></li>
+						<li><a href="left-sidebar.html">Newsletter</a></li>
+						<li><a href="right-sidebar.html">About Us</a></li>
+						<li><a href="#" class="button special">Sign Up</a></li>
 					</ul>
 				</nav>
 			</header>
@@ -88,33 +72,35 @@
 								<div class="container">
 									<nav class="col-sm-3" id="myScrollspy">
 								      <ul class="nav nav-pills nav-stacked">
-								        <li class="active"><a href="#section1">Linuxication '18</a></li>
-								        <li ><a href="#section2">Linuxication '17</a></li>
+								        <li class="active"><a href="#section1">Linuxication '17</a></li>
+								        <li><a href="#section2">Linuxication '16</a></li>
+								        <li><a href="#section3">Linuxication '15</a></li>
+								        <li><a href="section4">Linuxication '14</a></li>
+								        <li class="dropdown">
+								          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Linuxication '13<span class="caret"></span></a>
+								          <ul class="dropdown-menu">
+								            <li><a href="#section41">Section 4-1</a></li>
+								            <li><a href="#section42">Section 4-2</a></li>                     
+								          </ul>
+								        </li>
 								      </ul>
     								</nav>
 								</div>
-								<br><br><br><br><br><br>
-								
 							</section>
 						</div>
 						<div class="8u skel-cell-important">
 							<section>
+								<h2>Timeline</h2>
 								<a href="#" class="image fit"><img src="images/pic03.jpg" alt="" /></a>
 								<div id="section1">
 								<p>Vis accumsan feugiat adipiscing nisl amet adipiscing accumsan blandit accumsan sapien blandit ac amet faucibus aliquet placerat commodo. Interdum ante aliquet commodo accumsan vis phasellus adipiscing. Ornare a in lacinia. Vestibulum accumsan ac metus massa tempor. Accumsan in lacinia ornare massa amet. Ac interdum ac non praesent. Cubilia lacinia interdum massa faucibus blandit nullam. Accumsan phasellus nunc integer. Accumsan euismod nunc adipiscing lacinia erat ut sit. Arcu amet. Id massa aliquet arcu accumsan lorem amet accumsan commodo odio cubilia ac eu interdum placerat placerat arcu commodo lobortis adipiscing semper ornare pellentesque.</p>
 								</div>
 
-
 								<div id="section2">
 									<br/>
 									<br/>
-									<h2>Linuxication '17</h2>
-									<p>Abiding by the moto "Sharing knowledge, bridging gaps" MCUG(MIT Computer User's Group) organized their flagship event "LINUXICATION" a workshop that acquaints the budding computer enthusiasts with the basics of Linux based operating systems and provides motivational guidance for being a part of the open-source community. The workshop was conducted over three days from 5<sup>th</sup> Februrary to 7<sup>th</sup> Februrary in Department of Computer Engineering at MIT, Pune. The event saw a great response with about 150 participants for the workshop.</p>
-									<p>First day of the workshop began with Industrail Talks by Mr. Raju Vindane, an intern with the Humara linux project and a contributor to the projects like Diaspora and Debian and Mr. Dhanesh San=bne, a final year student who is an active contributo to Fedora and Mozilla. The speakers spoke about the need and the benefits of using the open source technology and tried to make students acquainted with the evolution of Linux and other open source technologies.</p>
-									<p>The main event started following the Industrial Talk which saw an array of sessions delivered by the members of MCUG beginning with the basics and going upto some advanced technologies. Pre-installation session gave students a brief idea of firmware basics and booting process which would help them to know the actual process that goes on behind the scene. This was followed by an extended installation session where all the students installed Ubuntu flavor of Linux on their laptops. Just to get hang of things and make people familiar with the operating system some basic sessions like Directory Structure and Basic Commands followed the installation.</p>
-									<p>Second day saw some interesting sessions which were focused on displaying the true power of Linux and open-source softwares. Sessions like shell scripting, GCC-GDB, Source Code exploration put forth some of the core fundamentals of automation and programming. The session on SSH-Telnet dealt with basic networking proficiency.</p>
-									<p>The last day was aimed at providing the students with knowledge of some advanced Open Source technologies. This day includede some of the most important and extended sessions like Advanced Shell Scripting, Emacs, Git and Advanced Commands which dealt with networking and text manipulation</p>
-									<p>With this the last day concluded on a high note with an overwhelming response from the participants who showed interest in making a shift from Windows to the open-source software.</p>
+									<h2> Section 2</h2>
+									<p> This is the 2nd section. Please provide me with more information.blassdddddd dddddd ddddddddddblass ddd ddddd ddd ddd dd ddddd dblassddddddddddd  dddddddddddblassddddd dddddddddddddddd dblassddddddddddddddddddddddblassddddddddddddddddddddddblassddddddddddddddddddddddblassddd ddddddddddd dddddddd</p>
 								</div>
 							</section>
 						</div>
@@ -152,40 +138,41 @@
 						<div class="6u">
 							<div class="row collapse-at-2">
 								<div class="6u">
-									<h3>Teknothon</h3>
+									<h3>Accumsan</h3>
 									<ul class="alt">
-										<li>Reverse Interview</li>
-										<li>Sessions on latest technologies</li>
-										<li>How stuff works?</li>
-										<li>Free Workshops</li>				
+										<li><a href="#">Nascetur nunc varius</a></li>
+										<li><a href="#">Vis faucibus sed tempor</a></li>
+										<li><a href="#">Massa amet lobortis vel</a></li>
+										<li><a href="#">Nascetur nunc varius</a></li>
 									</ul>
 								</div>
 								<div class="6u">
-									<h3>Linuxication</h3>
+									<h3>Faucibus</h3>
 									<ul class="alt">
-										<li>Contributing to open source community</li>
-										<li>Free Linux installation and CD's</li>
-										<li>Hands-on</li>
+										<li><a href="#">Nascetur nunc varius</a></li>
+										<li><a href="#">Vis faucibus sed tempor</a></li>
+										<li><a href="#">Massa amet lobortis vel</a></li>
+										<li><a href="#">Nascetur nunc varius</a></li>
 									</ul>
 								</div>
 							</div>
 						</div>
 						<div class="6u">
-							<h2>MCUG</h2>
-							<p>MIT Computer Users Group (MCUG) is the official technical group of MIT Pune.
-The group is open to everyone including non-MITians. So everyone is most welcome to join.</p>
-<b>Sharing Knowledge, Bridging Gaps</b><br><br>
+							<h2>Aliquam Interdum</h2>
+							<p>Blandit nunc tempor lobortis nunc non. Mi accumsan. Justo aliquet massa adipiscing cubilia eu accumsan id. Arcu accumsan faucibus vis ultricies adipiscing ornare ut. Mi accumsan justo aliquet.</p>
 							<ul class="icons">
-								<li><a href="http://facebook.com/mcugpune"><i class="fa fa-facebook-square" style="font-size:24px; color:#3b5998"></i></a></li>
-								<li><a href="http://twitter.com/mitcug"><i class="fa fa-twitter-square" style="font-size:24px; color:#4099ff"></i></a><br></li>
+								<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+								<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+								<li><a href="#" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+								<li><a href="#" class="icon fa-pinterest"><span class="label">Pinterest</span></a></li>
 							</ul>
-							<button type="button" class="btn btn-default btn-sm btn-primary">
-          <span class="glyphicon glyphicon-envelope"></span> mcug@mitpune.edu.in
-        </button>					
 						</div>
 					</div>
 					<ul class="copyright">
-						<li>&copy; MCUG. All rights reserved.</li>
+						<li>&copy; Untitled. All rights reserved.</li>
+						<li>Design: <a href="http://templated.co">TEMPLATED</a></li>
+						<li>Images: <a href="http://unsplash.com">Unsplash</a></li>
 					</ul>
 				</div>
 			</footer>
