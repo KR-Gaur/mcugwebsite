@@ -1,6 +1,23 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
+		<style type="text/css">
+			.video-container {
+			  position:relative;
+			  padding-bottom:56.25%;
+			  padding-top:30px;
+			  height:0;
+			  overflow:hidden;
+			}
+
+			.video-container iframe, .video-container object, .video-container embed {
+			  position:absolute;
+			  top:0;
+			  left:0;
+			  width:100%;
+			  height:100%;
+			}
+		</style>
 		<title>MIT Computer Users' Group</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
@@ -13,7 +30,7 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-		
+		<link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
 		<noscript>
 			<link rel="stylesheet" href="css/skel.css" />
 			<link rel="stylesheet" href="css/style.css" />
@@ -24,14 +41,14 @@
 	<body id="top">
 
 		<!-- Header -->
-			<header id="header" class="skel-layers-fixed">
-				<h1><img src="images/logo.png" alt="Smiley face" width="55px"/>MIT Computer Users' Group</h1>
-				<!--<nav id="nav">
+			<header id="header" class="skel-layers-fixed" style="background: rgba(0,0,0,0.8);">
+				<h1><a href="index.html"><img src="images/logo.png" style="height: 100%;width: 5%;"><font style="font-size: 20px;position: absolute;top: 5px;color: white;">MIT COMPUTER USERS' GROUP</font></a></h1>
+				<nav id="nav">
 					<ul>
-						<li><a href="index.html">Home</a></li>
+						<li><a href="index.html" style="color: white;">Home</a></li>
 						<li>
-							<div class="dropdown">
-								<button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown" style="border: none !important;">Events
+							<div class="dropdown" align="center">
+								<button class="dropdown-toggle" type="button" id="menu1" data-toggle="dropdown" style="border: none !important;background-color: rgba(144, 144, 144, 0);color: white;">Events
   								<span class="caret"></span></button>
   								<ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
 								    <li role="presentation"><a role="menuitem" href="Teknothon.html">Teknothon</a></li>
@@ -39,11 +56,11 @@
 							  </ul>
 							</div>
 						</li>
-						<li><a href="#">Newsletter</a></li>
-						<li><a href="#">Gallery</a></li>
-						<li><a href="no-sidebar.html">About Us</a></li>
+						<li><a href="right-sidebar.html" style="color: white;">Newsletter</a></li>
+						<li><a href="no-sidebar.html" style="color: white;">About Us</a></li>
+						<li><a href="#" class="button special" style="color: white;">Register</a></li>
 					</ul>
-				</nav>-->
+				</nav>
 			</header>
 		
 		<!-- Banner -->
