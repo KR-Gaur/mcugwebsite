@@ -17,6 +17,54 @@
 			  width:100%;
 			  height:100%;
 			}
+			.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  background: none repeat scroll 0 0 #ffffff;
+ 
+
+}
+
+.sk-rotating-plane {
+  background-image: url('images/preload.png');
+  
+  width: 308px;
+  height: 216px;
+   
+  -webkit-animation: sk-rotatePlane 1.2s infinite ease-in-out;
+          animation: sk-rotatePlane 1.2s infinite ease-in-out; }
+
+@-webkit-keyframes sk-rotatePlane {
+  0% {
+    -webkit-transform: perspective(180px) rotateX(0deg) rotateY(0deg);
+            transform: perspective(180px) rotateX(0deg) rotateY(0deg); }
+  50% {
+    -webkit-transform: perspective(180px) rotateX(0deg) rotateY(-179.9deg);
+            transform: perspective(180px) rotateX(0deg) rotateY(-179.9deg); }
+  100% {
+     -webkit-transform: perspective(180px) rotateX(0deg) rotateY(-359.9deg);
+            transform: perspective(180px) rotateX(0deg) rotateY(-359.9deg); } }
+
+@keyframes sk-rotatePlane {
+  0% {
+    -webkit-transform: perspective(180px) rotateX(0deg) rotateY(0deg);
+            transform: perspective(180px) rotateX(0deg) rotateY(0deg); }
+ 50% {
+    -webkit-transform: perspective(180px) rotateX(0deg) rotateY(-179.9deg);
+            transform: perspective(180px) rotateX(0deg) rotateY(-179.9deg); }
+  100% {
+     -webkit-transform: perspective(180px) rotateX(0deg) rotateY(-359.9deg);
+            transform: perspective(180px) rotateX(0deg) rotateY(-359.9deg); } }
+			
+
 		</style>
 		<title>MIT Computer Users' Group</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
@@ -24,6 +72,7 @@
 		<meta name="keywords" content="" />
 		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
 		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.js"></script>
 		<script src="js/skel.min.js"></script>
 		<script src="js/skel-layers.min.js"></script>
 		<script src="js/init.js"></script>
@@ -39,6 +88,12 @@
 
 	</head>
 	<body id="top">
+		<div class="preloader">
+
+	<div class="sk-rotating-plane"></div>
+
+	</div>
+
 
 		<!-- Header -->
 			<header id="header" class="skel-layers-fixed" style="background: rgba(0,0,0,0.8);">
@@ -46,23 +101,13 @@
 				<nav id="nav">
 					<ul>
 						<li><a href="index.html" style="color: white;">Home</a></li>
-						<li>
-							<div class="dropdown" align="center">
-								<button class="dropdown-toggle" type="button" id="menu1" data-toggle="dropdown" style="border: none !important;background-color: rgba(144, 144, 144, 0);color: white;">Events
-  								<span class="caret"></span></button>
-  								<ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-								    <li role="presentation"><a role="menuitem" href="Teknothon.html">Teknothon</a></li>
-								    <li role="presentation"><a role="menuitem" href="Linuxication.html">Linuxication</a></li>
-							  </ul>
-							</div>
-						</li>
-						<li><a href="right-sidebar.html" style="color: white;">Newsletter</a></li>
-						<li><a href="no-sidebar.html" style="color: white;">About Us</a></li>
-						<li><a href="#" class="button special" style="color: white;">Register</a></li>
+						<li><a href="Linuxication.html" style="color: white;">Linuxication</a></li>
+						<li><a href="Teknothon.html" style="color: white;">Teknothon</a></li>
+						<li><a href="Linuxication.html" class="button special">Register</a></li>
 					</ul>
 				</nav>
 			</header>
-		
+
 		<!-- Banner -->
 			<section id="banner">
 				<div>
@@ -84,7 +129,7 @@
 						<div class="4u">
 							<section class="special box">							
 								<h3>Linuxication</h3>
-								<p>It is a two day event where we teach people to use Linux from beginner level</p>
+								<p>It is a three day event where we teach people to use Linux from beginner level</p>
 							</section>
 						</div>
 						<div class="4u">
@@ -109,24 +154,18 @@
 					<div class="row">
 						<div class="8u">
 							<section>
-								<h2>Teknothon 2k17 is here!</h2>
-								<a class="image fit"><img src="images/tkposter1.jpg" alt="" /></a>
-								<p><b>Teknothon </b>is an event organized by MIT Computer Users Group.<br>
-
-The theme this year is Data Science. <br><br>
-
-As a part of Teknothon, there will be various sessions, hands-on workshops on data analytics & neural networks and <b>The Reverse Interview </b>by industry experts. <br><br><b>"How stuff works?"</b> will give you an in on the working of some latest stuff like bitcoins, Snapchat, bio-metric scanners and much more.<br>
-</p>
+								<h2>Linuxication '18 is here!</h2>
+								<a class="image fit"><img src="images/lxposter.jpg" alt="Linuxication Poster" /></a>
+								<p><b>Linuxication </b>is the flagship event of MIT Computer Users Group.<br>
+								<br>Various sessions on topics ranging from <b>installation of the Linux operating system, basic commands used in Linux, shell scripting etc. to general open source concepts</b> are conducted.<br> <br>All these sessions are conducted by the members of MCUG, thus providing the participants a friendly atmosphere to learn in. </p>
 							</section>
 						</div>
 						<div class="4u">
 							<section>
 								<br><br><br><br>
 								<h3>Register Now!</h3>
-								<p>All the workshops and sessions are free and solely on <b>first come first serve basis.</b><br><br>Only limited seats are available. So grab this opportunity before someone else does.</p><br>
-								<ul class="actions">
-									<li><a href="http://tiny.cc/TK17" class="button alt">Register Now!</a></li>
-								</ul>
+								<p>Linuxication is a three day workshop educating the masses about Linux and open source concepts from the grounds up. The workshop is conducted at a very nominal fee of Rs. 250/-. <br>We are excited to bridge the gap between you and Linux. Do join us for this <b>hands-on</b> 3 day workshop</p><br>
+								<div class='pm-button'><a href='https://www.payumoney.com/paybypayumoney/#/8F2D48D811E10E13B6A375027A2180CF'><img src='https://www.payumoney.com/media/images/payby_payumoney/new_buttons/23.png' /></a></div> 
 							</section>
 							<hr />
 					<!--		<section>
@@ -209,13 +248,19 @@ As a part of Teknothon, there will be various sessions, hands-on workshops on da
 The group is open to everyone including non-MITians. So everyone is most welcome to join.</p>
 <b>Sharing Knowledge, Bridging Gaps</b><br><br>
 							<ul class="icons">
-								<li><a href="http://facebook.com/mcugpune"><i class="fa fa-facebook-square" style="font-size:24px; color:#3b5998"></i></a></li>
-								<li><a href="http://twitter.com/mitcug"><i class="fa fa-twitter-square" style="font-size:24px; color:#4099ff"></i></a><br></li>
+								<li><a href="http://facebook.com/mcugpune"><i class="fa fa-facebook-square" style="font-size:28px; color:#3b5998"></i></a></li>
+								<li><a href="http://twitter.com/mitcug"><i class="fa fa-twitter-square" style="font-size:28px; color:#4099ff"></i></a><br></li>
 							</ul>
-							<button type="button" class="btn btn-default btn-sm btn-primary">
-          <span class="glyphicon glyphicon-envelope"></span> mcug@mitpune.edu.in
-        </button>					
+							<a href="mailto:mcug@mitpune.edu.in"><button type="button" class="btn btn-default btn-sm btn-primary"><span class="glyphicon glyphicon-envelope"></span> mcug@mitpune.edu.in</button></a>	
+        				<br><h4>Share</h4>
+        					<ul class="icons">
+        					<li><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//mcug.in"><i class="fa fa-facebook-square" style="font-size:28px; color:#3b5998"></i></a></li>			
+							<li><a href="https://twitter.com/home?status=MIT%20Computer%20Users'%20Group%0ASharing%20Knowledge,%20Bridging%20Gaps%0Ahttps%3A//mcug.in%0A"><i class="fa fa-twitter-square" style="font-size:28px; color:#4099ff"></i></a></li>
+							<li><a href="https://plus.google.com/share?url=https%3A//mcug.in"><i class="fa fa-google-plus-square" style="font-size:28px; color:#d34836"></i></a></li>
+							<li><a href="mailto:?&subject=MIT Computer Users' Group&body=MIT%20Computer%20Users'%20Group%0ASharing%20Knowledge,%20Bridging%20Gaps%0Ahttps%3A//mcug.in%0A"><i class="fa fa-envelope-square" style="font-size: 28px;"></i></a></li>
+							</ul>
 						</div>
+						
 					</div>
 					<ul class="copyright">
 						<li>&copy; MCUG. All rights reserved.</li>
@@ -225,3 +270,4 @@ The group is open to everyone including non-MITians. So everyone is most welcome
 
 	</body>
 </html>
+<script src="js/custom.js"></script>
